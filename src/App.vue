@@ -1,32 +1,45 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+      <div class="home">
+      <!-- 公共组件 -->
+      <sqCustom tpl='<div class="row-one" style="background: rgb(14, 66, 254);">
+          <div class="line-one">
+              <div class="top-right">测试企业</div>
+              <div class="top-left">
+                 <div class="erweima ">
+                    <span style="float: right;">申请入会</span>
+                    <div class="erweimabox">
+                       <div x-arrow class="popperarrow"></div>
+                      <div class="erweimaimg"> 
+                        <img src="https://www.xiqixie.com/static/qrcode/6f8442bc36d800f5b34a2902ca0a6dbe.png" alt="" srcset="">
+                        <div class="erweimatitle">扫码加入aaaaaa</div>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+          </div>
+      </div>'/>
+      
+    <public-top-nav/>
+
     <router-view/>
+  </div>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import sqCustom from '@/components/sq_custom'
+import PublicTopNav from '@/components/public/sq_top_nav'
+import SqCarousel from '@/components/sq_carousel'
+export default {
+ components: {
+    sqCustom,
+    SqCarousel,
+    PublicTopNav
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  },
+  created(){
+     
   }
 }
-</style>
+</script>

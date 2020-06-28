@@ -1,0 +1,165 @@
+.new-form{
+    position: relative;
+    min-height: 100vh;
+  }
+  .row-one{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center
+  }
+  .line-one{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .row-two{
+    background: #f00;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 28px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+    background: #fff;
+  }
+  .line-two-logo{
+    width: 300px;
+    flex-grow: 0;
+  }
+  .line-two-nav{
+    width: 900px;
+    flex-grow: 0;
+    display: flex;
+    justify-content: flex-end
+  }
+  .line-two-nav>div{
+    width: max-content;
+  }
+  .row-six{
+    display: flex;
+    justify-content: space-between;
+  }
+  .line-six-left{
+    flex-grow: 0;
+    width: 65%;
+    height: max-content;
+  }
+  .line-six-right{
+    flex-grow: 0;
+    width: calc( 35% - 30px );
+    height: max-content;
+  }
+  
+  .row-seven{
+    padding: 27px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .line-seven-top{
+    width: 1200px;
+    margin: 0 auto
+  }
+
+  
+/* 企业 二维码 登陆 */
+.top-right{
+    flex-grow: 0;
+    font-size: 12px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.erweimabox{
+  display: none;
+  transform-origin: center top;
+}
+
+.erweima:hover .erweimabox{
+  display: block;
+
+}
+
+.popperarrow{
+  display: block;
+  width: 0;
+  background: #fff;
+  height: 0;
+  border-width: 0 13px 13px;
+  border-style: solid;
+  border-color: transparent transparent #000;
+  clear: both;
+  float: right;
+  margin-right: 20px;
+}
+
+.erweima{
+    width: max-content;
+    height: max-content;
+}
+.erweimaimg {
+    background: #303133;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 2000;
+    font-size: 12px;
+    line-height: 1.2;
+    min-width: 10px;
+    word-wrap: break-word;
+}
+
+.erweima .erweimaimg{
+    width: 150px;
+    height: 150px;
+    clear: both;
+    margin: 0 auto
+}
+.erweima .erweimaimg img{
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+.erweima .erweimatitle{
+    text-align: center;
+    font-size: 12px;
+    height: 18px;
+    color: #eee;
+    line-height: 18px;
+    margin-top: 6px
+}
+.top-left{
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    display: flex;
+    width: max-content;
+    color: rgba(255, 255, 255, .8);
+}
+.top-group{
+    cursor: pointer;
+}
+.top-group:hover{
+    color: #fff;
+}
+.top-login>span:nth-child(1),
+.top-login>span:nth-child(3){
+    cursor: pointer;
+}
+.top-login>span:nth-child(1):hover,
+.top-login>span:nth-child(3):hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.top-login{
+    margin-left: 20px
+}
